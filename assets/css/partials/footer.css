@@ -1,0 +1,207 @@
+footer.main-footer p {
+    padding: 0;
+}
+
+footer.main-footer>section {
+    color: var(--brand-light);
+    background-color: var(--brand-primary-darker);
+    font-family: var(--base-font-family);
+    font-size: 14px;
+    border-top: 5px solid var(--brand-dark-grey);
+
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+footer.main-footer div,
+footer.main-footer p {
+    font-family: var(--base-font-family);
+    font-size: 14px;
+}
+
+footer.main-footer .special-info {
+    margin-top: 30px;
+    font-size: 14px;
+    color: darken(var(--brand-light-grey), 15%);
+}
+
+.linklist {
+    font-size: 14px;
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.linklist li {
+    padding-bottom: 3px;
+}
+
+@media(max-width: 1200px) {
+    .main-footer .col-sm-6 {
+        margin-top: 30px;
+    }
+}
+
+
+.footer-link {
+    color: var(--brand-primary);
+    display: inline-block;
+}
+
+.lang-selector {
+    display: inline-block;
+    line-height: 1em;
+    margin: 0px 0px 0px -8px;
+}
+
+.lang-link.active-lang {
+    color: var(--brand-primary);
+}
+
+.iconlist {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.icon {
+    display: inline-block;
+    line-height: 1em;
+}
+
+.icon.icon-harmony {
+    width: 12em;
+    height: 6em;
+}
+
+.icon.icon-harmony {
+    width: 12em;
+    height: 6em;
+    margin: 0px 0px 10px 0px;
+}
+
+.icon.icon-harmony text,
+.icon.icon-harmony tspan,
+.icon.icon-harmony polygon,
+.icon.icon-harmony path,
+.icon.icon-harmony circle {
+    fill: var(--brand-light-grey);
+}
+
+.icon-link {
+    display: inline-block;
+    height: 28px;
+    width: 28px;
+    margin-bottom: 15px;
+}
+
+.icon-link-twitter {
+    margin-bottom: 10px;
+}
+
+.icon-link-youtube {
+    margin-bottom: 10px;
+}
+
+.icon-link-rss {
+    margin-bottom: 0;
+}
+
+.icon.icon-twitter,
+.icon.icon-github,
+.icon.icon-youtube,
+.icon.icon-rss {
+    width: 100%;
+    height: 100%;
+}
+
+.icon svg, .icon svg path, .icon svg rect, .icon svg polygon, .icon svg circle {
+    width: 100%;
+    height: 100%;
+    fill: var(--brand-light-grey);
+    transition: fill .5 ease-out;
+    transition-property: fill;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+    transition-delay: initial;
+}
+
+.icon svg:hover {
+    
+    path, rect, polygon, circle {
+        fill: var(--brand-primary);
+    }
+    
+}
+
+.icon svg:hover {
+    fill: var(--brand-primary);
+}
+
+footer.main-footer {
+    color: var(--brand-light-grey);
+}
+
+footer.main-footer a {
+    color: var(--brand-light);
+}
+
+footer.main-footer a:hover {
+    color: var(--brand-light);
+}
+
+footer h4 {
+    font-weight: 600;
+}
+
+/* White footer content; icon hover and the active language are accented below. */
+footer.main-footer,
+footer.main-footer :where(section, div, p, span, h4, a),
+footer.main-footer .special-info,
+footer.main-footer .lang-link.active-lang,
+footer.main-footer a:hover,
+footer.main-footer a:focus-visible {
+    color: var(--brand-light);
+}
+footer.main-footer .icon svg,
+footer.main-footer .icon svg :is(g, path, rect, polygon, circle, ellipse, text, tspan),
+footer.main-footer .icon svg:hover,
+footer.main-footer .icon svg:hover :is(g, path, rect, polygon, circle, ellipse, text, tspan) {
+    fill: var(--brand-light);
+}
+footer.main-footer a {
+    color: var(--brand-light);
+    text-underline-offset: 4px;
+    transition: text-decoration-color 200ms ease-in;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+}
+footer.main-footer a:hover,
+footer.main-footer a:focus-visible {
+    text-decoration-color: var(--brand-light);
+}
+
+footer.main-footer a.icon-link svg,
+footer.main-footer a.icon-link svg :is(g, path, rect, polygon, circle, ellipse) {
+    transition: fill 200ms ease-in;
+}
+footer.main-footer a.icon-link:is(:hover, :focus-visible) svg,
+footer.main-footer a.icon-link:is(:hover, :focus-visible) svg :is(g, path, rect, polygon, circle, ellipse) {
+    fill: var(--brand-secondary);
+}
+footer.main-footer .lang-selector {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 8px 0 0;
+}
+footer.main-footer .lang-link {
+    display: inline-block;
+    padding-block: 6px;
+    border-bottom: 2px solid transparent;
+}
+footer.main-footer .lang-link.active-lang {
+    color: var(--brand-secondary);
+    font-weight: 700;
+    border-bottom-color: currentColor;
+}

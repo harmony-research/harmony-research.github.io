@@ -1,0 +1,136 @@
+languages: 
+  de:
+    id: de
+    name: Deutsch
+    urlbase: de
+  en:
+    id: en
+    name: English
+    urlbase: en
+
+default: de
+
+t:
+  nav:
+    info:
+      en: "Info"
+      de: "Info"
+    publications:
+      en: "Publications"
+      de: "Publikationen"
+    blog:
+      en: "Blog"
+      de: "Blog"
+    blog-preview:
+      en: "Blog Preview"
+      de: "Blog Vorschau"
+    team:
+      en: "Team"
+      de: "Team"
+    partners:
+      en: "Partners"
+      de: "Partner"
+    contact:
+      en: "Contact"
+      de: "Kontakt"
+    publications:
+      en: "Publications"
+      de: "Publikationen"
+
+  links:
+    harmony:
+      en: https://harmony-research.github.io/en/
+      de: https://harmony-research.github.io/
+    swph:
+      en: "https://www.softwarepark-hagenberg.com/en/"
+      de: "https://www.softwarepark-hagenberg.com/"
+    fhooe:
+      en: "https://www.fh-ooe.at/en/"
+      de: "https://www.fh-ooe.at/"
+    github:
+      en: "https://github.com/harmony-research"
+      de: "https://github.com/harmony-research"
+
+  pages:
+    imprint:
+      en: "Imprint"
+      de: "Impressum"
+    imprint-link:
+      en: "imprint"
+      de: "impressum"
+    dataprotection:
+      en: "Data Protection"
+      de: "Datenschutz"
+    dataprotection-link:
+      en: "dataprotection"
+      de: "datenschutz"
+    press:
+      en: "Press Material"
+      de: "Pressematerial"
+    press-link:
+      en: "press"
+      de: "pressematerial"
+    sitemap:
+      en: "Sitemap"
+      de: "Sitemap"
+    sitemap-link:
+      en: "sitemap/"
+      de: "sitemap/"
+
+  footer:
+    sitemap:
+      en: "Sitemap"
+      de: "Sitemap"
+    fhooe:
+      en: "FH Upper Austria"
+      de: "FH Oberösterreich"
+    fhooe-link:
+      en: "https://www.fh-ooe.at/en/"
+      de: "https://www.fh-ooe.at/"
+    heal:
+      en: "Heuristic and Evolutionary Algorithms Laboratory"
+      de: "Heuristic and Evolutionary Algorithms Laboratory"
+    heal-link:
+      en: "https://heal.heuristiclab.com"
+      de: "https://heal.heuristiclab.com"
+    k1met:
+      en: "K1-MET"
+      de: "K1-MET"
+    k1met-link:
+      en: "https://www.k1-met.com/en/"
+      de: "https://www.k1-met.com/"
+    vas:
+      en: "voestalpine Steel"
+      de: "voestalpine Stahl"
+    vas-link:
+      en: "https://www.voestalpine.com/stahl/en/Companies/voestalpine-Stahl-GmbH"
+      de: "https://www.voestalpine.com/stahl/Gesellschaften/voestalpine-Stahl-GmbH"
+    uv30-link:
+      en: "https://www.uppervision.at/en/"
+      de: "https://www.uppervision.at/"
+    ffg-link:
+      en: "https://www.ffg.at/ai-tech-green-2025"
+      de: "https://www.ffg.at/ai-tech-green-2025"
+    imprint:
+      en: "Imprint"
+      de: "Impressum"
+    dataprotection:
+      en: "Data Protection"
+      de: "Datenschutz"
+    contact:
+      en: "Contact"
+      de: "Kontakt"
+    press:
+      en: "Press Material"
+      de: "Pressematerial"
+    fhooefull:
+      en: "University of Applied Sciences Upper Austria"
+      de: "Fachhochschule Oberösterreich"
+    fundingtext:
+      en: 'The HARMONY project (#64855000) is funded through the FFG programme AI Ökosysteme 2025: AI for Tech & AI for Green. For further information, visit'
+      de: 'Das Projekt HARMONY (#64855000) wird gefördert durch das FFG Programm AI Ökosysteme 2025: AI for Tech & AI for Green. Nähere Informationen dazu unter'
+
+
+  months:
+    en: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+    de: ["Jänner", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember" ]

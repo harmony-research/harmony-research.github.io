@@ -1,0 +1,147 @@
+:root {
+  --paper-width: 15.5vw;
+  --paper-height: 150px;
+  --arrow-width: 50px;
+  --slider-py: 25px;
+}
+
+@media only screen and (max-width: 1000px) {
+  :root {
+    --paper-width: 25vw;
+    --item-width: 25vw;
+  }
+}
+
+.subpage-sec {
+   padding-top:120px;
+   padding-bottom:40px;
+   min-height: 60vh;
+
+   h2 {
+      font-size: 2rem;
+      font-weight:500;
+    }
+
+    h3 {
+      font-size: 1.8rem;
+      font-weight:400;
+    }
+
+    h4 {
+      font-size: 1.6rem;
+      font-weight:300;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--brand-primary);
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+ }
+
+ .imprint-infolist li {
+   line-height: 1.7em;
+}
+
+ .imprint-infolist{
+   list-style: none;
+   padding:0;
+   margin:0;
+ }
+
+ .nav-link {
+  color: var(--brand-primary) !important;
+}
+
+.nav-link::before {
+  background-color: var(--brand-primary) !important;
+}
+
+section.subpage-venue, section.subpage-calls {
+  article:not(:first-child) {
+    padding-top:25px;
+  }
+
+  article h1 {
+
+    font-size:700;
+    color: var(--brand-primary);
+
+  }
+
+  article p {
+    text-align: justify;
+  }
+
+  article p.chairs, p.highlight {
+    font-weight:500;
+    font-style: italic;
+    color: var(--brand-primary);
+  }
+
+  article:nth-child(odd) h2 {
+    font-size:2.2rem;
+    font-weight:500;
+  }
+
+  article:nth-child(even) h2 {
+    font-size:2.5rem;
+    font-weight:500;
+  }
+
+  .image-item {
+    overflow: hidden;
+    max-height:300px;
+  }
+
+  .contact-maps {
+    min-height:350px;
+    margin-top:20px;
+  }
+
+  .venue-list li, .call-list li {
+    line-height: 1.7em;
+ }
+
+  .venue-list, .call-list{
+    list-style: none;
+    padding:0;
+    margin:0;
+  }
+
+  .venue-list li > span, .call-list li > span {
+    color: var(--brand-primary);
+  }
+
+
+
+  .call-list li > ul {
+    padding-left:35px;
+  }
+
+  ul.dashed {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 1em;
+}
+
+ul.dashed > li:not(:first-child) {
+  padding-top:10px;
+}
+
+ul.dashed > li:before {
+    display: inline-block;
+    color: var(--brand-primary);
+    content: "-";
+    width: 1em;
+    margin-left: -1em;
+}
+
+.download-link {
+  font-size:1.2rem;
+  font-weight:500;
+}
+}

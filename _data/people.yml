@@ -1,0 +1,103 @@
+groups:
+  - name: FHOOE
+    address: Softwarepark 13
+    members:
+      - nick: jzenisek
+        firstname: Jan
+        lastname: Zenisek
+        prefix: Dr.
+        postfix: MSc
+        function:
+          en: Project Lead
+          de: Projektleitung
+        phone: +43 5 0804 27142
+        mail: jan.zenisek@fh-ooe.at
+        photo: jzenisek.jpg
+
+      - nick: pfleck
+        firstname: Philipp
+        lastname: Fleck
+        prefix: Dr.
+        postfix: MSc
+        function:
+          en: Research Associate
+          de: Wissenschaftlicher Mitarbeiter
+        phone: +43 5 0804 00000
+        mail: philipp.fleck@fh-ooe.at
+        photo: pfleck.jpg
+
+      - nick: chaider
+        firstname: Christian
+        lastname: Haider
+        prefix:
+        postfix: MSc
+        function:
+          en: Research Associate
+          de: Wissenschaftlicher Mitarbeiter
+        phone: +43 5 0804 00000
+        mail: christian.haider@fh-hagenberg.at
+
+      - nick: deder
+        firstname: Dominik
+        lastname: Eder
+        prefix: 
+        postfix: MSc
+        function:
+          en: Research Associate
+          de: Wissenschaftlicher Mitarbeiter
+        phone: +43 5 0804 00000
+        mail: dominik.eder@fh-hagenberg.at
+
+      - nick: maffenzeller
+        firstname: Michael
+        lastname: Affenzeller
+        prefix: FH-Prof. PD DI Dr.
+        postfix:
+        function:
+          en: Professor
+          de: Professor
+        phone: +43 5 0804 666
+        mail:  michael.affenzeller@fh-ooe.at
+        photo: maffenzeller.jpg
+
+      - nick: mbeneder
+        firstname: Michaela
+        lastname: Beneder
+        prefix: Mag.
+        postfix:
+        function:
+          en: Project Coordination
+          de: Projektkoordination
+        phone: +43 664 80484 27160
+        mail: michaela.beneder@fh-ooe.at
+        photo: mbeneder.jpg
+
+  - name: VAS
+    address: Stahlstraße 14
+    members:
+      - nick: chambrock
+        firstname: Carina
+        lastname: Hambrock
+        prefix: Dr.
+        postfix:
+        function:
+          en: Research Associate
+          de: Wissenschaftlicher Mitarbeiter
+        phone: +43 0 0000 27142
+        mail: carina.hambrock@voestalpine.at
+        photo: chambrock.jpg
+
+  - name: K1MET
+    address: Stahlstraße 14
+    members:
+      - nick: mthumfart
+        firstname: Maria
+        lastname: Thumfart
+        prefix: Dr
+        postfix:
+        function:
+          en: Research Associate
+          de: Wissenschaftliche Mitarbeiterin
+        phone: +43 0 0000 00000
+        mail: maria.thumfart@k1-met.at
+        photo: mthumfart.jpg

@@ -1,0 +1,24 @@
+<!-- Custom JS -->
+<script src="{{"/assets/js/leaflet/leaflet.js" | relative_url }}"></script>
+
+<script>
+    $(function () {
+        $(document).scroll(function () {
+            var $nav = $(".navbar-top");
+            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var menu = document.getElementById('navbarCollapse');
+        if (!menu || !window.bootstrap) return;
+        menu.querySelectorAll('a').forEach(function (link) {
+            link.addEventListener('click', function () {
+                if (window.matchMedia('(max-width: 767px)').matches) {
+                    bootstrap.Collapse.getOrCreateInstance(menu, { toggle: false }).hide();
+                }
+            });
+        });
+    });
+</script>

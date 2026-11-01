@@ -1,0 +1,108 @@
+@import "partials/header.css";
+@import "partials/blog-general.css";
+@import "partials/blog-postteaser.css";
+
+
+/* blog teaser*/
+
+.blog-button {
+   margin: 10px 0 10px 0;  
+ }
+
+#btn-blog:hover,
+#btn-blog:focus {
+    color: var(--brand-primary-light);
+    border-color: var(--brand-primary-light);
+}
+
+#btn-blog {
+  text-decoration: none;
+}
+
+html {   
+   scroll-padding-block: 110px!important;
+   scroll-behavior: smooth!important;
+}
+
+
+/* team */
+
+.topic-box {
+   text-decoration: none;
+   color: var(--base-text-color);
+ }
+ 
+ .topic-box:hover {
+   text-decoration: none;
+   color: var(--base-text-color);
+ }
+ 
+ #team .image-row { margin-block: 24px 36px; row-gap: 16px; }
+ #team .topic-box > a { display: block; }
+ #team .image-box {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 160px;
+   margin: 0;
+   padding: 20px 12px;
+ }
+ #team .image-box img {
+   display: block;
+   width: auto;
+   height: auto;
+   max-width: 100%;
+   max-height: 120px;
+   object-fit: contain;
+   margin: 0;
+ }
+ #team #image-k1metlogo { width: 240px; }
+ #team #image-heallogo { width: 200px; }
+ #team #image-vaslogo { width: 300px; }
+ 
+ .image-box footer small {
+   position: absolute;
+   left: 5%;
+   bottom: 5%;
+   font-size: 10px;
+   font-family: var(--base-font-family);
+   color: #999;
+ }
+ 
+ #image-fhlogo {   
+ }
+ 
+ #image-heallogo {   
+   /* width: 50% */
+ }
+ 
+ #image-k1metlogo {   
+
+ }
+ 
+/* Homepage editorial hierarchy. */
+.home-content > section > .container > h2 {
+  font-size: clamp(1.9rem, 3vw, 2.75rem);
+  letter-spacing: -.025em;
+  font-weight: 600;
+  margin: 0 0 32px;
+}
+.section-eyebrow { color: var(--brand-primary); font-size: .75rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 12px; }
+.background-dark .section-eyebrow { color: #a4dbee; }
+#info .container { max-width: 960px; }
+#info p, #info li { font-size: 1.0625rem; }
+#info p:not(.section-eyebrow), #info li {
+  text-align: justify;
+  hyphens: auto;
+}
+#info h3 { font-size: 1.35rem; font-weight: 600; margin: 36px 0 16px; }
+#info li { padding-left: 6px; margin-bottom: 12px; }
+#info ul { margin: 20px 0 0; padding-left: 22px; }
+#blog.background-dark { background: #102f3f; }
+#blog .blogpost-teaser { padding: 0; }
+#blog .post-meta { color: #c4dce6; font-size: .875rem; }
+#blog .blogpost-teaser img { border-radius: 4px; }
+#blog .blogpost-teaser h3 { margin-top: 12px; font-weight: 600; }
+#team > .container > .row:first-of-type p { max-width: 80ch; }
+#team .contact-info { row-gap: 28px; }
+#team .contact-info h4 { font-size: 1.2rem; font-weight: 600; }

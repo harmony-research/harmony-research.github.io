@@ -1,0 +1,70 @@
+
+{% if page.lang == site.lang or page.lang == [] %}
+    {% assign _lang = site.lang %}
+    {% capture footer_prefix %}/{% endcapture %}
+{% else %}
+    {% assign _lang = page.lang %}
+    {% capture footer_prefix %}/{{ page.lang }}/{% endcapture %}
+{% endif %}
+
+<footer class="main-footer">
+    <section id="footer">
+        <div class="container">
+                
+            <div class="row">
+                <div class="col-lg-5 col-md-6 col-sm-12">
+                    <div>
+                        <a class="footer-link" href="{{ site.data.i18n.t.links.harmony[_lang] }}">
+                            <span class="icon icon-harmony">{% include logo/harmony-logo.svg %}</span>                            
+                        </a>
+                    </div>                    
+                    <div>K1-MET GmbH</div>
+                    <div>BG88, Stahlstraße 14, 4020 Linz</div>
+                    <div>Phone.: +43 732 6989 75607</div>
+                    <div><a href="mailto:office@k1-met.com">Mail: office[at]k1-met.com</a></div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <h4>Quick Links</h4>
+                    <ul class="linklist">
+                        <li><a href="{{ site.data.i18n.t.footer.k1met-link[_lang] }}" target="_blank">{{ site.data.i18n.t.footer.k1met[_lang] }}</a></li>
+                        <li><a href="{{ site.data.i18n.t.footer.fhooe-link[_lang] }}" target="_blank">{{ site.data.i18n.t.footer.fhooe[_lang] }}</a></li>                    
+                        <li><a href="{{ site.data.i18n.t.footer.vas-link[_lang] }}" target="_blank">{{ site.data.i18n.t.footer.vas[_lang] }}</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <h4>{% if _lang == 'en' %}Information{% else %}Infos{% endif %}</h4>
+                    <ul class="linklist">                        
+                        <li><a href="{{ footer_prefix }}{{ site.data.i18n.t.pages.imprint-link[_lang] }}">{{ site.data.i18n.t.footer.imprint[_lang] }}</a></li>
+                        <li><a href="{{ footer_prefix }}{{ site.data.i18n.t.pages.dataprotection-link[_lang] }}">{{ site.data.i18n.t.footer.dataprotection[_lang] }}</a></li>
+                        <li><a href="{{ footer_prefix }}{{ site.data.i18n.t.pages.sitemap-link[_lang] }}">{{ site.data.i18n.t.footer.sitemap[_lang] }}</a></li>
+                        <li><a href="{{ footer_prefix }}#team">{{ site.data.i18n.t.footer.contact[_lang] }}</a></li>
+                        <li><a href="{{ footer_prefix }}{{ site.data.i18n.t.pages.press-link[_lang] }}">{{ site.data.i18n.t.footer.press[_lang] }}</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-1 col-md-6 col-sm-12">
+                    <ul class="iconlist">
+                        <li><a class="icon-link" href="{{ site.data.links.github }}" target="_blank"><span class="icon icon-github">{% include logo/icon-github.svg %}</span></a></li>
+                        <li><a class="icon-link" href="{{ "/feed.xml" | relative_url }}" target="_blank"><span class="icon icon-rss">{% include logo/icon-rss.svg %}</span></a></li>
+                        <li class="lang-selector">
+                            {% if _lang == "de" %}
+                                <span id="lang-link-de" class="lang-link active-lang" aria-current="true">DE</span>
+                                <a id="lang-link-en" class="lang-link" href="/en/">EN</a>
+                            {% else %}
+                                <a id="lang-link-de" class="lang-link" href="/" >DE</a>
+                                <span id="lang-link-en" class="lang-link active-lang" aria-current="true">EN</span>
+                            {% endif %}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row special-info">
+                <div class="col-lg-5 col-md-12 col-sm-12">
+                    <div>&copy {{ 'now' | date: "%Y" }} &nbsp;-&nbsp; HARMONY</div>
+                </div>
+                <div class="col-lg-7 col-md-12 col-sm-12">
+                    <p>{{ site.data.i18n.t.footer.fundingtext[_lang] }} <a target="_blank" href="{{ site.data.i18n.t.footer.ffg-link[_lang] }}">https://www.ffg.at/ai-tech-green-2025</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>

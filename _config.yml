@@ -18,21 +18,57 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: HARMONY
+title_tail: " - HARMONY"
+email: office@k1-met.at
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  de: Website des Forschungsprojekts HARMONY
+  en: Website of the research project HARMONY
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "https://harmony-research.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+lang: de
+github_username: harmony-research
+author: HARMONY
+keywords: Research Project, RH process, Interpretable Machine Learning
+
+# SEO
+google_analytics: false
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+
+environment: production
+regenerate: false
+show_drafts: false
+future: false
+
+blogname: "blog"
+permalink: blog/:year/:month/:day/:title/
+paginate: 7
+paginate_path: "blog/page:num/"
+
+collections:
+  category:
+    output: true
+    permalink: /blog/:name/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "category"
+    values:
+      layout: "category"
+  -
+    scope:
+      path: "assets/img"
+    values:
+      image: true
+
+excerpt_separator: <!--more-->
 
 # Exclude from processing.
 # The following items will not be processed, by default.

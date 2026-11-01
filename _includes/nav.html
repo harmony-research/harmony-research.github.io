@@ -1,0 +1,34 @@
+{% assign nav_lang = page.lang | default: site.lang %}
+{% assign home_url = '/' %}
+{% if nav_lang == 'en' %}{% assign home_url = '/en/' %}{% endif %}
+{% assign ishome = false %}
+{% if page.url == home_url %}{% assign ishome = true %}{% endif %}
+{% include cookie_consent.html %}
+<nav id="main-nav" class="navbar fixed-top navbar-expand-md navbar-top my-nav{% unless ishome %} nav-page{% endunless %}">
+    <div class="container-fluid">
+        <div class="brand-container">
+            <a href="{{ home_url | relative_url }}" class="navbar-brand {% if ishome %}nav-home-brand{% else %}nav-page-brand{% endif %}">{% include logo/harmony-logo.svg %}</a>
+        </div>
+        <button type="button" class="navbar-toggler pull-right" data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+            aria-label="{% if nav_lang == 'en' %}Toggle navigation{% else %}Navigation öffnen{% endif %}">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+            {% for nav_item in site.data.nav.MainNav %}
+                {% if nav_lang == 'en' and nav_item.item == 'blog' %}
+                    <a href="{{ '/blog/' | relative_url }}" class="nav-item nav-link" hreflang="de" title="Blog (German only)">Blog (DE)</a>
+                {% else %}
+                    {% if ishome and nav_item.homelink %}
+                        {% assign nav_url = home_url | append: '#' | append: nav_item.link %}
+                    {% elsif nav_item.pagelink %}
+                        {% assign nav_url = home_url | append: nav_item.link | append: '/' %}
+                    {% else %}
+                        {% assign nav_url = home_url | append: '#' | append: nav_item.link %}
+                    {% endif %}
+                    <a href="{{ nav_url | relative_url }}" class="nav-item nav-link">{{ nav_item.name[nav_lang] }}</a>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</nav>

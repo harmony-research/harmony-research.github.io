@@ -1,0 +1,66 @@
+{% if page.lang == "en" %}
+{% assign hero_eyebrow = "Research for sustainable steel production" %}
+{% assign hero_title = "Hybrid AI.<br>Better process understanding." %}
+{% assign hero_summary = "HARMONY brings together new monitoring equipment, metallurgical expertise and hybrid AI to develop interpretable process models for RH vacuum treatment in steel production." %}
+{% assign hero_method_label = "Innovation across the consortium" %}
+{% assign hero_monitoring = "New sensor systems & monitoring" %}
+{% assign hero_monitoring_detail = "Camera, radar and LiDAR systems for monitoring the RH process" %}
+{% assign hero_knowledge = "Process data & domain knowledge" %}
+{% assign hero_knowledge_detail = "Data preparation, physical models and metallurgical expertise" %}
+{% assign hero_learning = "Knowledge-guided hybrid AI" %}
+{% assign hero_learning_detail = "Advancing symbolic regression to combine data and domain knowledge" %}
+{% assign hero_validation = "Joint validation through plant trials and industrial case studies" %}
+{% assign hero_project = "Explore the research" %}
+{% assign hero_team = "Meet the team" %}
+{% assign hero_model = "Hybrid process models" %}
+{% assign hero_model_detail = "Interpretable. Robust. Real-time capable." %}
+{% assign hero_funding = "Funded through FFG · AI Ökosysteme 2025: AI for Tech & AI for Green" %}
+{% else %}
+{% assign hero_eyebrow = "Forschung für nachhaltige Stahlproduktion" %}
+{% assign hero_title = "Hybride KI.<br>Prozesse besser verstehen." %}
+{% assign hero_summary = "HARMONY verbindet neue Messtechnik, metallurgisches Fachwissen und hybride KI. Gemeinsam entstehen interpretierbare Prozessmodelle für die RH-Vakuumbehandlung in der Stahlproduktion." %}
+{% assign hero_method_label = "Innovation im gesamten Konsortium" %}
+{% assign hero_monitoring = "Neue Sensorik & Monitoring" %}
+{% assign hero_monitoring_detail = "Kamera-, Radar- und LiDAR-Systeme zur Überwachung des RH-Prozesses" %}
+{% assign hero_knowledge = "Prozessdaten & Domänenwissen" %}
+{% assign hero_knowledge_detail = "Datenaufbereitung, physikalische Modelle und metallurgisches Fachwissen" %}
+{% assign hero_learning = "Wissensgeleitete hybride KI" %}
+{% assign hero_learning_detail = "Symbolische Regression weiterentwickeln, um Daten und Domänenwissen zu verbinden" %}
+{% assign hero_validation = "Gemeinsame Validierung in Anlagenversuchen und industriellen Fallstudien" %}
+{% assign hero_project = "Das Projekt entdecken" %}
+{% assign hero_team = "Unser Team" %}
+{% assign hero_model = "Hybride Prozessmodelle" %}
+{% assign hero_model_detail = "Interpretierbar. Robust. Echtzeitfähig." %}
+{% assign hero_funding = "Gefördert durch die FFG · AI Ökosysteme 2025: AI for Tech & AI for Green" %}
+{% endif %}
+<header class="home-header">
+    <div class="container header-container">
+        <div class="hero-grid">
+            <div class="header-info-container">
+                <p class="hero-eyebrow">{{ hero_eyebrow }}</p>
+                <h1>{{ hero_title }}</h1>
+                <p class="hero-summary">{{ hero_summary }}</p>
+                <div class="hero-actions">
+                    <a class="hero-button" href="#info">{{ hero_project }} <span aria-hidden="true">↗</span></a>
+                    <a class="hero-text-link" href="#team">{{ hero_team }} <span aria-hidden="true">↓</span></a>
+                </div>
+            </div>
+            <div class="hero-model">
+                <p class="model-label">{{ hero_method_label }}</p>
+                <div class="research-contributions">
+                    <div class="research-contribution"><span aria-hidden="true">01</span><div><h2>{{ hero_monitoring }}</h2><p>{{ hero_monitoring_detail }}</p></div></div>
+                    <div class="research-contribution"><span aria-hidden="true">02</span><div><h2>{{ hero_knowledge }}</h2><p>{{ hero_knowledge_detail }}</p></div></div>
+                    <div class="research-contribution"><span aria-hidden="true">03</span><div><h2>{{ hero_learning }}</h2><p>{{ hero_learning_detail }}</p></div></div>
+                </div>
+                <div class="model-connector" aria-hidden="true">↓</div>
+                <div class="model-result"><h2>{{ hero_model }}</h2><p>{{ hero_model_detail }}</p></div>
+                <p class="model-validation">{{ hero_validation }}</p>
+                <p class="model-partners">K1-MET · FH OÖ · voestalpine</p>
+            </div>
+        </div>
+        <div class="hero-caption">
+            <p>Hybrid AI and Rule-based Modelling for Optimized Operations in Next-Generation Steel Industry</p>
+            <p>{{ hero_funding }}</p>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "Ubuntu Sans";
+  src: url("../../fonts/Ubuntu_Sans/UbuntuSans.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ubuntu Sans";
+  src: url("../../fonts/Ubuntu_Sans/UbuntuSans-Italic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+}
+:root {
+    --brand-primary: #0a5ea0;
+    --brand-primary-light: #1e7a9c;
+    --brand-primary-dark: #0f4b5c;
+    --brand-primary-darker:#102f3f;
+    --brand-secondary: #46b1e1;
+    --brand-success: #5e8036;
+    --brand-info: #52d1dc;
+    --brand-warning: #f79824;
+    --brand-danger: #f24236;
+    --brand-light: #ffffff;
+    --brand-grey: #666666;
+    --brand-light-grey: #999999;
+    --brand-lighter-grey: #cccccc;
+    --brand-dark-grey: #333333;
+    --brand-black: #222222;
+    --brand-text-light: #ffffff;
+    --brand-text-dark: #111111;
+
+
+    --base-text-color: #243b47;
+    --base-text-color-light: #ffffff;
+    --base-bg: #ffffff;
+
+    --sans-serif-font: "Ubuntu Sans", sans-serif!important;
+    --serif-font: Baskerville!important;
+
+    --base-font-family: var(--sans-serif-font)!important;
+    --base-font-size: 1rem!important;
+    --base-font-weight: 400!important;
+
+    --small-font-size:  .875rem!important;
+    --base-line-height: 1.7!important;    
+    --spacing-unit:     30px!important;
+
+}
