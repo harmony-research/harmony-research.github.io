@@ -104,7 +104,7 @@ description: Website des Forschungsprojekts HARMONY
                 <h4>Magdalena Schatzl</h4>
                 <table class="contact-table">
                     <tr><td>Funktion:</td><td>Projektleitung</td></tr>
-                    <tr><td>Tel.:</td><td>+43 50804 27114</td></tr>                  
+                    <tr><td>Tel.:</td><td>+43 664 883 23 567</td></tr>                  
                     <tr><td>Mail:</td><td><a href="mailto:magdalena.schatzl@k1-met.com">magdalena.schatzl[at]k1-met.com</a></td></tr>
                 </table>
             </div>
@@ -113,15 +113,15 @@ description: Website des Forschungsprojekts HARMONY
                 <table class="contact-table">
                     <tr><td>Funktion:</td><td>Koordination FH OÖ</td></tr>
                     <tr><td>Tel.:</td><td>+43 50804 27114</td></tr>                  
-                    <tr><td>Mail:</td><td><a href="mailto:magdalena.schatzl@k1-met.com">magdalena.schatzl[at]k1-met.com</a></td></tr>
+                    <tr><td>Mail:</td><td><a href="mailto:jan.zenisek@fh-ooe.at">jan.zenisek[at]fh-ooe.at</a></td></tr>
                 </table>
             </div>
             <div class="col-lg-4 col-md-12">
                 <h4>Roman Rössler</h4>
                 <table class="contact-table">
                     <tr><td>Funktion:</td><td>Koordination voestalpine</td></tr>
-                    <tr><td>Tel.:</td><td>+43 50804 27114</td></tr>                  
-                    <tr><td>Mail:</td><td><a href="mailto:magdalena.schatzl@k1-met.com">magdalena.schatzl[at]k1-met.com</a></td></tr>
+                    <tr><td>Tel.:</td><td></td></tr>                  
+                    <tr><td>Mail:</td><td><a href="mailto:roman.roessler@voestalpine.com">roman.roessler[at]voestalpine.com</a></td></tr>
                 </table>
             </div>
         </div>

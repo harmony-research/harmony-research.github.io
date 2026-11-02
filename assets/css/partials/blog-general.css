@@ -45,6 +45,20 @@ ul, ol {
   margin-left: var(--spacing-unit);
 }
 
+/* Match article lists to the reading width of the surrounding paragraphs. */
+.post-content > ul,
+.post-content > ol {
+  max-width: 75ch;
+  margin-inline: 0;
+  padding-inline-start: 1.5em;
+  list-style-position: outside;
+}
+
+.post-content li {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
 li {
   > ul,
   > ol {
