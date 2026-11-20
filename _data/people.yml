@@ -101,3 +101,14 @@ groups:
         phone: +43 0 0000 00000
         mail: maria.thumfart@k1-met.at
         photo: mthumfart.jpg
+      - nick: mschatzl
+        firstname: Magdalena
+        lastname: Schatzl        
+        prefix: Dr
+        postfix:
+        function:
+          en: Research Associate
+          de: Wissenschaftliche Mitarbeiterin
+        phone: +43 0 0000 00000
+        mail: magdalena.schatzl@k1-met.at
+        photo: mschatzl.jpg
